@@ -110,7 +110,7 @@ def insertstudent():
 @app.route('/justweather')
 def weather():
     
-    newsapi = NewsApiClient(api_key='0cb1d586898e4507bbb32e52ad999bae')
+    newsapi = NewsApiClient(api_key='')
     all_articles = newsapi.get_everything(q='weather forecast',
                                       domains='independent.ie',
                                       from_param='2021-04-14',
